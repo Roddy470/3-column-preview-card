@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container {
+    display: flex;
+    border-radius: 12px;
+    max-width: 750px;
+}
+
+div.container div.box {
+    padding: 2em;
+}
+
+div.container div.box img {
+    margin-bottom: .7em;
+}
+
+div.container div.box h1 {
+    color: hsl(0, 0%, 95%);
+    margin-bottom: .7em;
+    font-size: 2rem;
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+div.container div.box p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: .8rem;
+    line-height: 1.8;
+    margin-bottom: 8em;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.container div.box button {
+    background-color: hsl(0, 0%, 95%);
+    font-size: .8rem;
+    border: none;
+    padding: .7em 1.4em;
+    border-radius: 999px;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.container div.box:nth-of-type(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+
+div.container div.box:nth-of-type(1) button {
+    color: hsl(31, 77%, 52%);
+}
+
+div.container div.box:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+div.container div.box:nth-of-type(2) button {
+    color: hsl(184, 100%, 22%);
+}
+
+div.container div.box:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+}
+
+div.container div.box:nth-of-type(2) button {
+    color: hsl(179, 100%, 13%);
+}
+
+div.container div.box button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+
+@media (max-width: 760px) {
+    main {
+        display: block;
+        height: auto;
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    
+    div.container {
+        flex-direction: column;
+    }
+
+    div.container div.box p {
+        margin-bottom: 2em;
+    }
+
+    div.attribution {
+        margin-bottom: 20px;
+    }
+}
